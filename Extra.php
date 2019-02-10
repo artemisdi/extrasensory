@@ -4,6 +4,12 @@
  * User: Proga
  * Date: 06.02.2019
  * Time: 16:15
+ * $name - имя экстрасенса (string)
+ * $numberGuessed - предположение экстрасенса (Array[number])
+ * $prestige - претсиж экстраскнса (Array[number])
+ * $matchId - значение для отоброжения (boolean)
+ *
+ *
  */
 
 class Extra
@@ -13,13 +19,32 @@ class Extra
     public $prestige;
     public $matchId;
 
+    /**
+     * Extra constructor.
+     *
+     * входные параматры
+     *  name - имя экстрасесна
+     * выходные параметры
+     *  name - имя экстрасенса
+     *  prestige - массив престижа эсктрасенса
+     *  numberGuessed - массив догадок экстрасенса
+     */
     public function __construct($name)
     {
-        $this->name = $name; //присвоили имя, которое зададим при создании экземпляра
-        $this->prestige = 50;// присвоил престиж , равен 50, что бы был инициализированный
-        $this->numberGuessed = array(); // инициализировал массив догадок для каждого экстрасенса
+        $this->name = $name;
+        $this->prestige = 50;
+        $this->numberGuessed = array();
     }
 
+    /**
+     * Функция по определнию престижа, предположительного числа и активного значения( отгадал или нет)
+     * входные параметры
+     *  userNumber - число загаданное пользователем
+     * выходные параметры
+     *  prestige - добавленное значение в массив престижа
+     *  numberGuessed - добавленное значение в массив догадок
+     *  $matchId - добавленное булевское значение в массив совпадений
+     */
     function generationRand($userNumber)
     {
         if ($userNumber >= 10 && $userNumber <= 99) {

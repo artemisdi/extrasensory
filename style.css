@@ -43,6 +43,45 @@ body {
 }
 
 
+.form-number-extra {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.formm-make-number {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.disabled {
+    display: none;
+}
+
+.matchId {
+    color: red;
+    cursor: pointer;
+}
+
+#dataOne {
+    width: 180px;
+    margin-right: 20px;
+}
+
+#dataTwo {
+    width: 180px;
+    margin-right: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+li {
+    padding-left: 8px;
+}
+
 @keyframes extraLip {
     0% {
         background-image: url("img/lip one.png");
@@ -99,35 +138,4 @@ body {
         left: 45%;
         font-size: 18px;
     }
-}
-
-.form-number-extra {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.formm-make-number {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.disabled {
-    display: none;
-}
-
-.matchId {
-    color: red;
-    cursor: pointer;
-}
-
-#dataOne {
-    width: 180px;
-    margin-right: 20px;
-}
-
-#dataTwo {
-    width: 180px;
-    margin-right: 20px;
 }

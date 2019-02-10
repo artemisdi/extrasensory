@@ -3,9 +3,18 @@
  * @param id
  * @returns {HTMLElement}
  */
+
+/**
+ *
+ * @param id
+ * @returns {HTMLElement}
+ * функция для связывания id
+ */
 let docId = function (id) {
     return document.getElementById(id);
 };
+
+// AJAX при перезагрузки страницы
 document.addEventListener("DOMContentLoaded", addAjax('check.php', 'application/x-www-form-urlencoded')); // вызов функции AJAX при перезагрузке страницы
 
 /*
@@ -125,7 +134,7 @@ function addAjax(url, code, params) {
                             }
                             //добавление последнего значения пользователя в шар
                             docId('imageUserData').innerHTML = '<span>' + x.numberUser[x.numberUser.length - 1] + '</span><div class="sprite-lip" id="spriteLip"></div>';
-                            //скрывание  и отоброжение окон
+                            //скрывание  и отображение окон
                             docId('formOne').classList.add('disabled');
                             docId('formTwo').classList.remove('disabled');
                             //при нажатии на кнопку загадать число
