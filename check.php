@@ -13,7 +13,7 @@ if (empty($_SESSION['name'])) {
     // создаем имена
     if (isset($_POST['dataExtra'])) {
         for ($i = 0; $i < $_POST['dataExtra']; $i++) {
-            $name[] = new Extra("экстрасенс " .($i+1));
+            $name[] = new Extra("экстрасенс " . ($i + 1));
         }
         $_SESSION['name'] = $name;
         for ($i = 0; $i < count($_SESSION['name']); $i++) {

@@ -33,7 +33,6 @@ window.onload = function () {
         } else {
             docId('dataOne').style.border = '1px solid red';
         }
-
     }
 };
 /*
@@ -162,7 +161,6 @@ function addAjax(url, code, params) {
                     }
                 }
             }
-
         }
     };
 }

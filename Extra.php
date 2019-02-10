@@ -8,8 +8,6 @@
  * $numberGuessed - предположение экстрасенса (Array[number])
  * $prestige - претсиж экстраскнса (Array[number])
  * $matchId - значение для отоброжения (boolean)
- *
- *
  */
 
 class Extra
@@ -21,12 +19,11 @@ class Extra
 
     /**
      * Extra constructor.
-     *
      * входные параматры
      *  name - имя экстрасесна
      * выходные параметры
      *  name - имя экстрасенса
-     *  prestige - массив престижа эсктрасенса
+     *  prestige - престиж эсктрасенса
      *  numberGuessed - массив догадок экстрасенса
      */
     public function __construct($name)
@@ -79,8 +76,6 @@ class Extra
                     $this->numberGuessed[] = rand(92, 99);
                 }
             }
-        }
-        switch ($this->numberGuessed) { /*Если делать так, ты будешь брать массив чисел, а тебе надо одно. Лучше перед генерацией объявить переменную, сохранить в нее числе сгенерированное, а потом его использовать здесь и добавлять в массив. И лучше сделать if, switch больше подходит, когда подразумевается несколько вариантов (блоков case больше одного)*/
         }
         $prestigeCheck = $this->numberGuessed;
         if (end($prestigeCheck) == $userNumber) {
