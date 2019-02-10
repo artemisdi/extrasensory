@@ -1,0 +1,57 @@
+<!--ВАРИАНТ ДЛЯ СТРОЧНОГО ОТОБРОЖЕНИЯ-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div class="main-window" id="window">
+    <div class="main-window__change" id='mainWindowChange'>
+        <div id="formOne">
+            <p>здравтсвуйте, выберите число экстрасенсов</p>
+            <div class="form-number-extra">
+                <input type="text" id="dataOne"
+                       class="form-control" maxlength="2"
+                       placeholder="Число экстрасенсов"
+                       autofocus>
+                <button id="buttonOne" class='btn btn-dark'>Нажмите</button>
+            </div>
+        </div>
+        <div id="formTwo" class='hidden disabled'>
+            <div class="image-fortuneteller">
+                <div class="image" id="imageUserData"></div>
+            </div>
+            <p>Загадайте число</p>
+            <div class="formm-make-number">
+                <input type="text" id="dataTwo"
+                       class="form-control" maxlength="2"
+                       placeholder="Загадайте число">
+                <button id="buttonTwo" class='btn btn-dark'>Нажмите</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-window__footer">
+        <p id='test-one'></p>
+        <div class="main-window__footer-counter">
+            <table class='table table-bordered'>
+                <thead class='thead-dark table table-bordered' id="thead">
+                <tr id="tHeadRow"></tr>
+                </thead>
+                <tbody id="tBody">
+                <tr id="tBodyPrestige"></tr>
+                <tr id="tBodyResult"></tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
